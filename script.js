@@ -8,7 +8,11 @@ class Person {
 		return `${this.name}`;
 	}
 	set age(age){
-		this.age=age;
+		if (typeof age === 'number' && age > 0) {
+            this.age = age;
+        } else {
+            console.log("Invalid age");
+        }
 	}
 }
 
