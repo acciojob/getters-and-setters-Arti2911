@@ -9,7 +9,7 @@ class Person {
 	}
 	set age(age){
 		if (typeof age === 'number' && age > 0) {
-            this.age = age;
+            this._age = age;
         } else {
             console.log("Invalid age");
         }
